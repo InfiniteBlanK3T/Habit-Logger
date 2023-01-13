@@ -361,7 +361,7 @@ namespace Habit_Logger
 
             string? valueInsert = Console.ReadLine();
 
-            while (!Int32.TryParse(valueInsert, out _) || Convert.ToInt32(valueInsert) < 0 || valueInsert == null)
+            while (!Int32.TryParse(valueInsert, out _) || Convert.ToInt32(valueInsert) < 0)
             {
                 Console.WriteLine("\n\nInvalid number. Try again.\n\n");
                 valueInsert = Console.ReadLine();
